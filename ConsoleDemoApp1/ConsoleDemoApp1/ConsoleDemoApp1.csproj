@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>ConsoleDemoApp1.day6.ExtensionMain</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -43,11 +46,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="assigment\assign2.cs" />
+    <Compile Include="day3\PasswordInput.cs" />
+    <Compile Include="day4\Employee.cs" />
+    <Compile Include="day4\Switch.cs" />
+    <Compile Include="day5\Point.cs" />
+    <Compile Include="day6\Employee.cs" />
+    <Compile Include="day6\EmployeeExtension.cs" />
+    <Compile Include="day6\Student.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Seconds.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

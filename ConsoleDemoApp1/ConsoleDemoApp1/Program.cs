@@ -6,15 +6,38 @@ using System.Threading.Tasks;
 
 namespace ConsoleDemoApp1
 {
-    internal class Program
+    
+    internal class Count
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Console.WriteLine("demo # program");
-            for (int i = 0; i < 20; i++)
+            string str;
+            Console.WriteLine("Enter a string:");
+            str = Console.ReadLine();
+            DuplicateCount(str);
+        }
+        static void DuplicateCount(string str)
+        {
+            int count = 0;
+            for (int i = 0; i < str.Length; i++)
             {
-                Console.WriteLine(i);
+                char ch = str[i];
+                int freq = 0;
+                foreach (char c in str)
+                {
+                    if (c == ch)
+                    {
+
+                        freq++;
+                    }
+                }
+                if (freq > 1)
+                {
+                    str = str.Replace(str[i] + "", "");
+                    count++;
+                }
             }
+            Console.WriteLine(count);
         }
     }
 }
