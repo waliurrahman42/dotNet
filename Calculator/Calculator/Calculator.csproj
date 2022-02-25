@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{803F6BD2-D968-467D-8AB1-0691C3001DFF}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>ConsoleDemoApp1</RootNamespace>
-    <AssemblyName>ConsoleDemoApp1</AssemblyName>
+    <ProjectGuid>{84265EAD-9E94-41E5-A326-B51B38E3DE05}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Calculator</RootNamespace>
+    <AssemblyName>Calculator</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,16 +23,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject>ConsoleDemoApp1.assigment.assig4.NumTo_Word</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -46,34 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="assigment\assig-3\Assig3.cs" />
-    <Compile Include="assigment\assig4\num to word.cs" />
-    <Compile Include="assigment\assign2.cs" />
-    <Compile Include="DateTimeDemo.cs" />
-    <Compile Include="day10-23feb\delegate2.cs" />
-    <Compile Include="day10-23feb\DelegateAction.cs" />
-    <Compile Include="day10-23feb\DelegateTest.cs" />
-    <Compile Include="day10-23feb\InterfaceDemo.cs" />
-    <Compile Include="day10-23feb\InterfaceDemo2.cs" />
-    <Compile Include="day3\PasswordInput.cs" />
-    <Compile Include="day4\Employee.cs" />
-    <Compile Include="day4\Switch.cs" />
-    <Compile Include="day5\Point.cs" />
-    <Compile Include="day6\Employee.cs" />
-    <Compile Include="day6\EmployeeExtension.cs" />
-    <Compile Include="day6\Student.cs" />
-    <Compile Include="day7\Product.cs" />
-    <Compile Include="day8\IndexerDemo.cs" />
-    <Compile Include="day9\constrctorAndDestroctor.cs" />
-    <Compile Include="day9\InheritanceRuntime.cs" />
-    <Compile Include="eventdemo\EventDemo1.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="MyCalc.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Seconds.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
