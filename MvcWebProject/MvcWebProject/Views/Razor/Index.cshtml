@@ -1,0 +1,67 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+
+
+
+<h2>Index</h2>
+
+
+
+@DateTime.Now
+<br />
+
+2+6
+
+
+
+<br />
+@(2+6)
+
+
+
+
+
+
+
+@{
+    int i = 0;
+    for (i = 0; i < 7; i++)
+    {
+        <br />
+        // Write(i);
+
+        @i;
+    }
+}
+
+<br />
+
+
+
+
+
+
+
+
+
+@{ 
+    int a = 20;
+    int b = 67;
+}
+
+@if (a>b)
+{
+    @a <span>is max</span>
+}
+else
+{
+    @b <span>is max</span>
+}
+
+
+@{ 
+    
+}

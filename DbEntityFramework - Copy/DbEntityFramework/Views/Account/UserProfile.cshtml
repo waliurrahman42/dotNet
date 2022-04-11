@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "UserProfile";
+}
+
+<h2>UserProfile</h2>
+
+
+
+vistor no : @ViewBag.TotalVisitors </br>
+
+Welcome @ViewBag.UserName</br>
+
+
+
+Login Time: @ViewBag.LoginTime</br>
+<span>@Html.ActionLink("Sign Out", "SignOut", "Account")</span>

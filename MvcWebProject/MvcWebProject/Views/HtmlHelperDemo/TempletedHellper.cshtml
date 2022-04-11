@@ -1,0 +1,14 @@
+﻿@model MvcWebProject.Models.Student
+
+@{
+    ViewBag.Title = "TempletedHellper";
+}
+
+<h2>Templeted Hellper</h2>
+
+
+@using (Html.BeginForm("TempletedHellper", "HtmlHelperDemo"))
+            {
+                @Html.EditorForModel()
+            }
+

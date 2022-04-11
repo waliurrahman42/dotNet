@@ -7,15 +7,16 @@ using System.Threading.Tasks;
 namespace ConsoleDemoApp1.eventdemo
 {
 
+    public delegate void MyEventHandler1(int num);
     internal class Publisher
     {
-        public event EventHandler EventOfPublisherCube;
+        public event MyEventHandler1 Cube;
 
         public void  Notify(int num)
         {
-            if(EventOfPublisherCube != null)
+            if(Cube != null)
             {
-               // EventOfPublisherCube.Invoke(num);
+                Cube.Invoke(num);
             }
             else
             {
@@ -43,7 +44,8 @@ namespace ConsoleDemoApp1.eventdemo
         {
 
             Publisher publisher = new Publisher();
-            publisher.Notify(1);
+            publisher.Cube +=new EventDemoTest().GetCube;
+            publisher.Notify(5);
 
         }
 

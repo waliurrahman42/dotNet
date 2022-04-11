@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewBag.Title = "StandardHelper";
+}
+
+<h2>Standard Helper page</h2>
+
+
+
+@using (Html.BeginForm("StandardHelper", "HtmlHelperDemo"))
+{
+
+    <label>ID:</label>@Html.TextBox("id")
+    <br />
+    <br />
+    <label>Full Name:</label>@Html.TextBox("Name")
+    <br />
+    <br />
+
+    <label>Gender:</label>
+    @Html.RadioButton("Gender", "male") <label>Male</label>
+    @Html.RadioButton("Gender", "female") <label>Female</label>
+    @Html.RadioButton("Gender", "other") <label>other</label>
+    
+    <br />
+    <br />
+
+    <label>Qualfication:</label>
+    @Html.DropDownList("Qualfication", new SelectList(ViewBag.Qualification), "select qulafication")
+    
+    <br />
+    <br />
+    
+    <label>city:</label>
+    @Html.DropDownList("City", "-select city-")
+    <br />
+    <br />
+    
+    <input type="submit" value="Register" />
+    @Html.
+
+
+
+}
+

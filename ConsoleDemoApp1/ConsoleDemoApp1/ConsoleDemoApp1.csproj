@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ConsoleDemoApp1.assigment.assig4.NumTo_Word</StartupObject>
+    <StartupObject>ConsoleDemoApp1.LinqExp.ArrayListDemo2</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -47,7 +47,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="assigment\assig-3\Assig3.cs" />
-    <Compile Include="assigment\assig4\num to word.cs" />
+    <Compile Include="assigment\assig4\numtoword.cs" />
+    <Compile Include="assigment\assig4\RemoveComonChar.cs" />
+    <Compile Include="assigment\assig4\sorting.cs" />
     <Compile Include="assigment\assign2.cs" />
     <Compile Include="DateTimeDemo.cs" />
     <Compile Include="day10-23feb\delegate2.cs" />
@@ -67,6 +69,19 @@
     <Compile Include="day9\constrctorAndDestroctor.cs" />
     <Compile Include="day9\InheritanceRuntime.cs" />
     <Compile Include="eventdemo\EventDemo1.cs" />
+    <Compile Include="LinqExp\ArrayListDemo.cs" />
+    <Compile Include="LinqExp\ArrayListDemo2.cs" />
+    <Compile Include="LinqExp\City.cs" />
+    <Compile Include="LinqExp\HashTableDemo.cs" />
+    <Compile Include="LinqExp\LinqDemo1.cs" />
+    <Compile Include="LinqExp\State.cs" />
+    <Compile Include="multiTherading\MyThread.cs" />
+    <Compile Include="multiTherading\ParlellForeach.cs" />
+    <Compile Include="multiTherading\TaskUsingForLoop.cs" />
+    <Compile Include="multiTherading\TaskUsingForLoopParallel.cs" />
+    <Compile Include="multiTherading\ThreadDemo.cs" />
+    <Compile Include="multiTherading\threadDemo2.cs" />
+    <Compile Include="multiTherading\ThreadSyncDemo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Seconds.cs" />

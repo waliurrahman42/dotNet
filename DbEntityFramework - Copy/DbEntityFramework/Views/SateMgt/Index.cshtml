@@ -1,0 +1,18 @@
+﻿@using DbEntityFramework.Controllers
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+Message Data from ViewDat : @ViewData["Message"]
+
+<br/>
+
+@{ 
+    Test test = (Test)ViewData["Test"];
+}
+
+Test Data from ViewDat : @test.Id
